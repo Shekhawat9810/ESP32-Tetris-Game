@@ -5,6 +5,7 @@ Project Overview
 This project transforms a blank hardware setup into a fully functional game console. It features a 16x8 matrix engine, real-time collision detection, and a scoring system. Designed as an exercise in embedded systems architecture, it bridges the gap between low-level electronic signals and high-level game logic.
 
 Hardware Components
+
 Microcontroller: ESP32 DevKit V1
 
 Display: 0.96" SSD1306 I2C OLED
