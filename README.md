@@ -4,21 +4,24 @@ ESP32 Tetris Console is a compact, embedded game system that brings the iconic T
 Project Overview
 This project transforms a blank hardware setup into a fully functional game console. It features a 16x8 matrix engine, real-time collision detection, and a scoring system. Designed as an exercise in embedded systems architecture, it bridges the gap between low-level electronic signals and high-level game logic.
 
-Hardware Components
+#Hardware Components
 
-Microcontroller: ESP32 DevKit V1
+* Microcontroller: ESP32 DevKit V1
 
-Display: 0.96" SSD1306 I2C OLED
+* Display: 0.96" SSD1306 I2C OLED
 
-Input: 2-Axis Analog Joystick (with integrated push-button)
+* Input: 2-Axis Analog Joystick (with integrated push-button)
 
-Component,ESP32 Pin
-OLED SDA,D21
-OLED SCL,D22
-Joystick VRX,D34
-Joystick VRY,D35
-Joystick SW,D13
-VCC/GND,3V3 / GND
+Component|,Component Pin,|ESP32 Board Label
+OLED Display|,GND,|GND
+OLED Display,|1VDD (VCC),|3V3
+OLED Display,|SCK (SCL),|D22
+OLED Display,|SDA,|D21
+Joystick,|GND,|GND
+Joystick,|+5V (VCC),|3V3
+Joystick,|VRX,|D34
+Joystick,|VRY,|D35
+Joystick,|SW,|D13
 
 Software Features
 Custom Game Engine: Uses a 16x8 grid-based array to manage the playfield and piece states.
